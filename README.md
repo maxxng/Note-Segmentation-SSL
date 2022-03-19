@@ -12,6 +12,11 @@ $ cd Note-Segmentation-SSL
 $ pip install -r requirements.txt
 ```
 
+NOTE: Since their CUDA11.1 verison results in incompatibility with our CUDA11.4, we need to run
+```bash
+pip install cupy-cuda114
+```
+
 NOTE: If you can't install apex, i just removed the '==0.1'. If torch==1.8.1+cu111 version is not found, try: 
 ```bash
 pip install torch==1.8.1+cu111 torchvision==0.9.1+cu111 torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
